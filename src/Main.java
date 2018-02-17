@@ -4,14 +4,17 @@ public class Main {
 
 
 
-            int x=1027;
-            int y=x%10;
-            if(y==7) {
-                System.out.println("Последняя цифра " + x + " есть семерка");
+            int a=4;
+            int b=5;
+            int r=10;
+
+            if(r*r>=a*a/4+b*b/4) {
+                System.out.println("Прямоугольник можно накрыть кругом");
             }
             else {
-                System.out.println("Последняя цифра " + x + " не есть семерка");
+                System.out.println("Прямоугольник нельзя накрыть кругом");
             }
+
 
         }
     }
