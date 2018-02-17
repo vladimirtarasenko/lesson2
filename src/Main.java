@@ -4,16 +4,22 @@ public class Main {
 
 
 
-            int a=4;
-            int b=5;
-            int r=10;
+            int rouble=1154;
+           String roublestext=Integer.toString(rouble);
+           int last=roublestext.length();
 
-            if(r*r>=a*a/4+b*b/4) {
-                System.out.println("Прямоугольник можно накрыть кругом");
-            }
-            else {
-                System.out.println("Прямоугольник нельзя накрыть кругом");
-            }
+           char lastletter=roublestext.charAt(last -1);
+
+           if(lastletter=='1') {
+               System.out.println(rouble + " рубль");
+           }
+        if(lastletter=='2'||lastletter=='3'||lastletter=='4') {
+            System.out.println(rouble + " рубля");
+        }
+            if(lastletter=='5'||lastletter=='6'||lastletter=='7'||lastletter=='8'||lastletter=='9'||lastletter=='0') {
+                System.out.println(rouble + " рублей");
+           }
+
 
 
         }
